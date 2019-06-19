@@ -57,12 +57,6 @@ Actually, there can be multiple reasons:
 * If launching of the agents takes long, and Jenkins calls the plugin in the meantime again to start n instances, the ECS plugin doesn't know if this instances are really needed or just requested because of the slow start. That's why the ECS plugin subtracts the number of launching agents from the number of requested agents (for a specific label). This can mean for parallel stages that some of the agents are launched after the previous bunch of agents becomes online.
 
 
-
-## Maintainers
-Andreas Sieferlinger ([GitHub](https://github.com/webratz) [Twitter](https://twitter.com/webratz))  
-Philipp Garbe ([GitHub](https://github.com/pgarbe), [Twitter](https://twitter.com/pgarbe))  
-Marky Jackson ([GitHub](https://github.com/markyjackson-taulia), [Twitter](https://twitter.com/MarkyJackson3))
-
 ## Developing
 
 Building the Plugin
